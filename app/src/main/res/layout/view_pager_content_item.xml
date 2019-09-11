@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minHeight="500dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_white_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/news_one"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/text_view_heading"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_below="@id/image_view"
+                android:layout_margin="10dp"
+                android:text="India had a point to prove against Australia, says Kohli after win"
+                android:textSize="20sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_view_content"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:layout_margin="10dp"
+                android:text="Following India's 36-run victory against Australia, captain Virat Kohli has said India had a point to prove against Australia because of their recent defeats against the defending World Cup champions."
+                android:textSize="12sp"
+                android:layout_below="@id/text_view_heading"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_view_link"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:textSize="12sp"
+                android:lineSpacingExtra="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:background="#77000000"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Click here for more details"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
